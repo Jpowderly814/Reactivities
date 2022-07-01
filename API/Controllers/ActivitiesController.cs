@@ -10,6 +10,8 @@ namespace API.Controllers
     [HttpGet]
     public async Task<ActionResult<List<Activity>>> GetActivities()
     {
+      Console.WriteLine("here");
+
       return await Mediator.Send(new List.Query());
     }
 
