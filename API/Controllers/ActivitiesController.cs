@@ -1,13 +1,13 @@
 using System;
 using System.Threading.Tasks;
 using Application.Activites;
-using Application.Core;
 using Domain;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
+  [AllowAnonymous]
   public class ActivitiesController : BaseApiController
   {
 
